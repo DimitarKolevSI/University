@@ -1,0 +1,16 @@
+USE Hotel
+
+SELECT personalID FROM CLIENT
+WHERE clientsNumber IN ( SELECT clientsNumber FROM RESERVATIONS WHERE registerDate LIKE '2020%')
+
+SELECT roomNumber FROM ROOM WHERE
+roomNumber in (SELECT roomNumber FROM RESERVATIONS WHERE registerDate LIKE '2019-07%')
+
+SELECT address FROM CLIENT WHERE
+clientsNumber IN (SELECT clientsNumber FROM RESERVATIONS WHERE clientsNumber IS NOT NULL)
+
+SELECT packet FROM RESERVATIONS WHERE
+roomNumber IN (SELECT roomNumber FROM ROOM WHERE roomType LIKE 'Apartment')
+
+SELECT DISTINCT priceForNight FROM RESERVATIONS WHERE
+roomNumber IN (SELECT roomNumber FROM ROOM WHERE floor LIKE 1)
