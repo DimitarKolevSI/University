@@ -30,6 +30,7 @@ public:
 	VideoGame(const char* Name, const char* Creator, const char* Platform, const int Year, const double Price, const int Amount, const double Rating, const int NumberOfRatings);
 	VideoGame(const VideoGame& Copy);
 	VideoGame& operator=(const VideoGame& Copy);
+	bool operator==(const VideoGame& other);
 
 	const char* getName() const;
 	const char* getCreator() const;

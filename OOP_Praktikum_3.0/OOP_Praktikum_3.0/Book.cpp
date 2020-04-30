@@ -120,6 +120,11 @@ Book & Book::operator=(const Book & CopyObject)
 	return *this;
 }
 
+bool Book::operator==(const Book & other)
+{
+	return (!(strcmp(other.getTitle(), this->Title)) && !(strcmp(other.getAuthor(), this->Author)));
+}
+
 const char * Book::getTitle() const
 {
 	return this->Title;

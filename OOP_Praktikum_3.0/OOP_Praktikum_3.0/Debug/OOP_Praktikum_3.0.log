@@ -1,2 +1,11 @@
-﻿  Source.cpp
+﻿  Book.cpp
+  Guest.cpp
+  Laptop.cpp
+  Registered.cpp
+  Shop.cpp
+  ShoppingCart.cpp
+  Smartphone.cpp
+  Source.cpp
+  VideoGame.cpp
+  Generating Code...
   OOP_Praktikum_3.0.vcxproj -> C:\Users\Димитър\source\repos\OOP_Praktikum_3.0\Debug\OOP_Praktikum_3.0.exe

@@ -27,6 +27,7 @@ public:
 	SmartPhone(const char* Brand, const char* Model, const double Price, const int Amount, const int Year, const double Rating, const int NumberOfRatings);
 	SmartPhone(const SmartPhone& Copy);
 	SmartPhone& operator= (const SmartPhone& Copy);
+	bool operator==(const SmartPhone& other);
 
 	const char* getBrand() const;
 	const char* getModel() const;

@@ -50,6 +50,5 @@ int main()
 	cout << b << endl;
 	cout << l << endl;
 	system("pause");
-	
 	return 0; 
 }

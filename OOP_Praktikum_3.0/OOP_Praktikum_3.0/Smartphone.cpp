@@ -103,6 +103,11 @@ SmartPhone & SmartPhone::operator=(const SmartPhone & CopyObject)
 	return *this;
 }
 
+bool SmartPhone::operator==(const SmartPhone & other)
+{
+	return (!(strcmp(other.getBrand(), this->Brand)) && !(strcmp(other.getModel(), this->Model)));
+}
+
 const char * SmartPhone::getBrand() const
 {
 	return this->Brand;

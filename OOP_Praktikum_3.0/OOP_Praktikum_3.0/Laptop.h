@@ -27,6 +27,7 @@ public:
 	Laptop(const char* Brand, const char* Model, const char* Category, const double Price, const int Amount, const int Year, const double Rating, const int NumberOfRatings);
 	Laptop(const Laptop& Copy);
 	Laptop& operator= (const Laptop& Copy);
+	bool operator==(const Laptop& other);
 
 	const char* getBrand() const;
 	const char* getModel() const;

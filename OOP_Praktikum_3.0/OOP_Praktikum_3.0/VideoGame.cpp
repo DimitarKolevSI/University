@@ -114,6 +114,11 @@ VideoGame & VideoGame::operator=(const VideoGame & Copy)
 	return *this;
 }
 
+bool VideoGame::operator==(const VideoGame & other)
+{
+	return !(strcmp(other.getName(),this->Name));
+}
+
 const char * VideoGame::getName() const
 {
 	return this->Name;

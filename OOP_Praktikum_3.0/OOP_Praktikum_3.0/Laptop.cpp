@@ -114,6 +114,11 @@ Laptop & Laptop::operator=(const Laptop & CopyObject)
 	return *this;
 }
 
+bool Laptop::operator==(const Laptop & other)
+{
+	return (!(strcmp(other.getBrand(), this->Brand)) && !(strcmp(other.getModel(), this->Model)));
+}
+
 const char * Laptop::getBrand() const
 {
 	return this->Brand;

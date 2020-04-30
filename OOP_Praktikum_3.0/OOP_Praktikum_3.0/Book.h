@@ -30,6 +30,7 @@ public:
 	Book(const char* Title, const char* Author, const char* Genre, const int Pages, const double Price, const int Amount, const int Year, const double Rating, const int NumberOfRatings);
 	Book(const Book& Copy);
 	Book& operator= (const Book& Copy);
+	bool operator==(const Book& other);
 
 	const char* getTitle() const;
 	const char* getAuthor() const;
