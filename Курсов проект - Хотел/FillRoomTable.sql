@@ -1,5 +1,7 @@
 USE Hotel
 
+--Insert some example values in the RÎÎÌS table
+
 INSERT INTO ROOMS (roomNumber,floor,roomCapacity,roomType,priceForNight) VALUES (101,1,1,'Room',75)
 INSERT INTO ROOMS (roomNumber,floor,roomCapacity,roomType,priceForNight) VALUES (102,1,1,'Room',75)
 INSERT INTO ROOMS (roomNumber,floor,roomCapacity,roomType,priceForNight) VALUES (103,1,1,'Room',75)

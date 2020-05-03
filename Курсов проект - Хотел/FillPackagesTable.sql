@@ -1,4 +1,7 @@
 USE Hotel
+
+--Insert some example values in the PACKAGES table
+
 INSERT INTO PACKAGES VALUES ('RO',0);
 INSERT INTO PACKAGES VALUES ('BB',5);
 INSERT INTO PACKAGES VALUES ('HB',10);

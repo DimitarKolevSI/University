@@ -1,5 +1,7 @@
 USE Hotel
 
+--Insert some example values in the CLIENTS table
+
 INSERT INTO CLIENTS (firstName,secondName,lastName,personalID,IDCardNumber,address,gender)
 VALUES ('Angel','Georgiev','Dimitrov','8706234402','731577245','Petko Voivoda str. 10 Qmbol','M');
 

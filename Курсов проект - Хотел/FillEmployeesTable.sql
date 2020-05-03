@@ -1,5 +1,7 @@
 USE HOTEL;
 
+--Insert some example values in the EMPLOYEES table
+
 INSERT INTO EMPLOYEES (firstName,secondName,lastName,personalID,type,insuranceNumber,workingHours,salary,gender)
 VALUES('Georgi','Kaloqnov','Petrov','8010288531','piccolo','1089800023',8,900,'M')
 
