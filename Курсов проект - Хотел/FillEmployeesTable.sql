@@ -29,5 +29,3 @@ VALUES('Anna','Borisova','Karaivanova','7807256398','receptionist','8733359810',
 
 INSERT INTO EMPLOYEES (firstName,secondName,lastName,personalID,type,insuranceNumber,workingHours,salary,gender)
 VALUES('Kiril','Vladislavov','Boikov','8512045219','manager','6125811490',8,2350,'M')
-
-select*from  EMPLOYEES

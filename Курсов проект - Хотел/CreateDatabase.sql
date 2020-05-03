@@ -1,12 +1,12 @@
 USE Hotel
 
-
-CREATE TABLE ROOM(
+CREATE TABLE ROOMS(
 	roomNumber INT,
 	floor INT,
 	status CHAR(1) DEFAULT 'F',
 	roomCapacity INT,
-	roomType VARCHAR(10)
+	roomType VARCHAR(10),
+	priceForNight DECIMAL(8,2)
 );
 
 CREATE TABLE RESERVATIONS(
@@ -16,11 +16,12 @@ CREATE TABLE RESERVATIONS(
 	reservationNumber INT IDENTITY(1,1),
 	clientsName VARCHAR(60),
 	priceForNight DECIMAL(8,2),
+	totalPrice AS (priceForNight * DATEDIFF(DAY,registerDate,checkOutDate)) PERSISTED,
 	clientsNumber INT,
-	packet VARCHAR(50)
+	packet CHAR(2)
 );
 
-CREATE TABLE CLIENT(
+CREATE TABLE CLIENTS(
 	firstName VARCHAR(20),
 	secondName VARCHAR(20),
 	lastName VARCHAR(20),
@@ -42,4 +43,9 @@ CREATE TABLE EMPLOYEES(
 	gender CHAR(1),
 	employeeID INT IDENTITY(1,1),
 	salary DECIMAL(10,2)
+);
+
+CREATE TABLE PACKAGES(
+	package CHAR(2),
+	additionalPrice INT
 );
